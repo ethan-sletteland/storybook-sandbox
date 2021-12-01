@@ -19,7 +19,7 @@ describe('ButtonComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'sandbox'`, () => {
+  it(`should have as title 'Button'`, () => {
     const fixture = TestBed.createComponent(ButtonComponent);
     const button = fixture.componentInstance;
     expect(button.label).toEqual('Button');

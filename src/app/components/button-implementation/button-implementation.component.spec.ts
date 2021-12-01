@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ButtonImplementationComponent } from './button-implementation.component';
+import ButtonComponent from "../../../stories/button/button.component";
 
 describe('ButtonImplementationComponent', () => {
   let component: ButtonImplementationComponent;
@@ -22,4 +23,11 @@ describe('ButtonImplementationComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Button'`, () => {
+    const fixture = TestBed.createComponent(ButtonComponent);
+    const button = fixture.componentInstance;
+    expect(button.label).toEqual('Button');
+  });
+
 });
