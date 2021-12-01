@@ -16,11 +16,11 @@ Run `npm run storybook` for the storybook server.
 
 ## Development server
 
-Run `ng serve` or `npm start` to start the angular dev server.
+Run `ng serve` or `npm run start` to start the angular dev server.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` or `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
