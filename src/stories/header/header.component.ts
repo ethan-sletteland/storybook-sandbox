@@ -38,7 +38,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
         ></storybook-button>
         <storybook-button
           *ngIf="!user"
-          primary
           size="small"
           (onClick)="onCreateAccount.emit($event)"
           label="Sign up"
