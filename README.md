@@ -12,7 +12,7 @@ The `button-implementation.component` then extends the `stories/button-component
 
 ## Storybook server
 
-Run `npm storybook` for the storybook server. 
+Run `npm run storybook` for the storybook server. 
 
 ## Development server
 
