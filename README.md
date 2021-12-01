@@ -12,15 +12,15 @@ The `button-implementation.component` then extends the `stories/button-component
 
 ## Storybook server
 
-Run `npm run storybook` for the storybook server. 
+Run `npm run storybook` for the [Storybook](https://storybook.js.org/) server. 
 
 ## Development server
 
 Run `ng serve` or `npm run start` to start the angular dev server.
 
-## Running unit tests
+## Running unit tests with Jest
 
-Run `ng test` or `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run test` to execute the unit tests via [Jest](https://jestjs.io/).
 
 ## Running end-to-end tests
 
