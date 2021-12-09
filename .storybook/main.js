@@ -6,7 +6,8 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "storybook-addon-designs"
+    "storybook-addon-designs",
+    "storybook-dark-mode"
   ],
   "core": {
     "builder": "webpack5"
