@@ -28,6 +28,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@storybook/addon-a11y": "^6.4.9",
     "rxjs": "latest",
     "storybook-dark-mode": "^1.0.8",
     "tslib": "^2.3.0",
