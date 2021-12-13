@@ -10,7 +10,10 @@
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "e2e": "ng e2e",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "jest": {
     "preset": "jest-preset-angular",
@@ -41,6 +44,7 @@
     "@angular/elements": "^13.0.2",
     "@babel/core": "^7.16.0",
     "@compodoc/compodoc": "^1.1.16",
+    "@cypress/schematic": "^1.6.0",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
@@ -57,6 +61,7 @@
     "jest-preset-angular": "^11.0.1",
     "karma-coverage": "~2.0.3",
     "storybook-addon-designs": "^6.2.0",
-    "typescript": "~4.4.3"
+    "typescript": "~4.4.3",
+    "cypress": "latest"
   }
 }
