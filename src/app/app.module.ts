@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ButtonImplementationComponent } from './components/button-implementation/button-implementation.component';
 import ButtonComponent from "../stories/button/button.component";
 import HeaderComponent from "../stories/header/header.component";
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import HeaderComponent from "../stories/header/header.component";
     HeaderComponent,
     ButtonComponent,
     // implementations
-    ButtonImplementationComponent
+    ButtonImplementationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

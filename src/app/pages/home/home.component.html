@@ -1,0 +1,15 @@
+<h2>Welcome</h2>
+<p>
+  <storybook-button
+    label="I am a storybook button"
+  ></storybook-button>
+</p>
+
+<p>
+  <app-button-implementation
+    label="I am an an extended button"
+    (onClick)="clickHandler($event)"
+  ></app-button-implementation>
+  {{clickText}}
+</p>
+
