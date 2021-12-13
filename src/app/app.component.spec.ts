@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import ButtonComponent from "../stories/button/button.component";
 import {ButtonImplementationComponent} from "./components/button-implementation/button-implementation.component";
+import HeaderComponent from "../stories/header/header.component";
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -13,6 +14,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         ButtonComponent,
+        HeaderComponent,
         ButtonImplementationComponent
       ],
     }).compileComponents();
