@@ -11,14 +11,18 @@ In this architecture `.story` decorated components are confined to the `stories`
 
 The `button-implementation.component` then extends the `stories/button-component`, referencing it's template and style files directly and implementing it's own click handler.
 
+## Development server
+
+Run `ng serve` or `npm run start` to start the angular dev server.
+
 ## Storybook server
 
 Run `npm run storybook` for the [Storybook](https://storybook.js.org/) server.
 While Storybook is running, Run `npm run loki test` for [Loki](https://loki.js.org/) regression checking.
 
-## Development server
+## Documentation server
 
-Run `ng serve` or `npm run start` to start the angular dev server.
+Run `npm run docs:serve` for the [Compodoc](https://compodoc.app/) server.
 
 ## Running unit tests with Jest
 
