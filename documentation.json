@@ -673,21 +673,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "Large",
@@ -703,7 +703,7 @@
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/page/Page.stories.ts",
+                "file": "src/stories/header/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -713,16 +713,6 @@
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/header/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/page/Page.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -734,6 +724,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/header/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/page/Page.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -773,11 +773,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/button/Button.stories.ts",
+                "file": "src/stories/header/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -793,29 +793,17 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/header/Header.stories.ts",
+                "file": "src/stories/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
             }
         ],
         "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -826,6 +814,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/stories/button/Button.stories.ts": [
@@ -880,38 +880,6 @@
                     "defaultValue": "(args: Button) => ({\n  props: args,\n})"
                 }
             ],
-            "src/stories/page/Page.stories.ts": [
-                {
-                    "name": "LoggedIn",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/page/Page.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "LoggedOut",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/page/Page.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/page/Page.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<Page>",
-                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
-                }
-            ],
             "src/stories/header/Header.stories.ts": [
                 {
                     "name": "LoggedIn",
@@ -942,6 +910,38 @@
                     "deprecationMessage": "",
                     "type": "Story<Header>",
                     "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/page/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/page/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/page/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/page/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
             ]
         },

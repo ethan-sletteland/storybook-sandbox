@@ -28,3 +28,7 @@ Run `npm run test` to execute the unit tests via [Jest](https://jestjs.io/).
 
 Run `npm run cypress:run` to execute the end-to-end tests via [Cypress](https://www.cypress.io/).
 
+## Running full dev environment
+
+Run `npm run all` to start the dev server and initialize Storybook, unit testing, and e2e. regression testing needs to be run manually at this point.
+

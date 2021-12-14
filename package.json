@@ -14,7 +14,8 @@
     "e2e": "ng e2e",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "loki": "loki"
+    "loki": "loki",
+    "all": "concurrently \"ng serve\" \"npm run storybook\" \"npm run test:watch\" \"npm run cypress:run\""
   },
   "jest": {
     "preset": "jest-preset-angular",
@@ -59,6 +60,7 @@
     "@webcomponents/custom-elements": "^1.5.0",
     "axe-core": "^4.3.5",
     "babel-loader": "^8.2.3",
+    "concurrently": "^6.4.0",
     "cypress": "^9.1.1",
     "cypress-axe": "^0.13.0",
     "jasmine-core": "~3.10.0",
