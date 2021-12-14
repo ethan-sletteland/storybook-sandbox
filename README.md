@@ -26,5 +26,5 @@ Run `npm run test` to execute the unit tests via [Jest](https://jestjs.io/).
 
 ## Running end-to-end tests
 
-Run `npm run cypress:run` to execute the end-to-end tests via cypress.
+Run `npm run cypress:run` to execute the end-to-end tests via [Cypress](https://www.cypress.io/).
 
