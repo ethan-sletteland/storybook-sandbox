@@ -13,7 +13,8 @@
     "test:watch": "jest --watch",
     "e2e": "ng e2e",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "loki": "loki"
   },
   "jest": {
     "preset": "jest-preset-angular",
@@ -32,6 +33,7 @@
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
     "@storybook/addon-a11y": "^6.4.9",
+    "loki": "^0.28.1",
     "rxjs": "latest",
     "storybook-dark-mode": "^1.0.8",
     "tslib": "^2.3.0",
@@ -65,5 +67,20 @@
     "karma-coverage": "~2.0.3",
     "storybook-addon-designs": "^6.2.0",
     "typescript": "~4.4.3"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }
